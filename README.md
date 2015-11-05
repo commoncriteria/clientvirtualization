@@ -6,7 +6,7 @@ Protection Profile for Client Virtualization
 ## Working Draft
 [Essential Security Requirements (ESR)](http://common-criteria.rhcloud.com/clientvirtualization/output/clientvirtualization-esr.html)
 
-[Protection Profile for Server Virtualization](http://common-criteria.rhcloud.com/clientvirtualization/output/clientvirtualization-release.html)
+[Protection Profile for Client Virtualization](http://common-criteria.rhcloud.com/clientvirtualization/output/clientvirtualization-release.html)
 
 ## Release Version
 
