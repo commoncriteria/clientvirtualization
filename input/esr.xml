@@ -9,7 +9,7 @@
 		<identifier>42</identifier>
 		<version>0.1</version>
 		<status>draft</status>
-		<issuedate>9 November 2015</issuedate>
+		<issuedate>3 February 2016</issuedate>
 		<approver/>
 		<supercedes/>
 	</intro>
@@ -31,20 +31,15 @@
 			elaborate on subtleties not apparent in the “bulleted” high level
 			statements.
 		-->
-		Client Virtualization, for the purposes of this PP, refers to a virtualization 
-		system (VS) that implements virtualized hardware components locally on an 
-		endpoint machine (typically client hardware such as desktop or laptop computers 
-		that a user interacts with directly). It creates a virtualized hardware environment 
-		for each instance of a guest operating system (virtual machines or VMs) permitting 
-		these environments to execute concurrently while maintaining the appearance of 
-		isolation and exclusive control over assigned computing resources. Client 
-		virtualization is generally used on endpoint systems, making use of the local 
-		machine's resources (memory, CPU, etc.) to provide isolated user environments.  
-		Server virtualization differs from client virtualization in that the hypervisors for 
-		a server virtualization VS typically run on non-endpoint machines (usually server 
-		class hardware) that the user accesses remotely.  This PP does not address 
-		virtualization on mobile devices. Nor does it address application virtualization or 
-		containers.<br></br>
+		Client Virtualization, for the purposes of this PP, refers to a virtualization system (VS) that implements 
+		virtualized hardware components locally on an endpoint machine.  Endpoints are typically client hardware 
+		such as desktop or laptop computers that a user interacts with directly. It creates a virtualized hardware 
+		environment for each instance of a guest operating system (virtual machines or VMs) permitting these 
+		environments to execute concurrently while maintaining the appearance of isolation and exclusive control 
+		over assigned computing resources. Client virtualization is generally used on endpoint systems, making use 
+		of the local machine's resources (memory, CPU, etc.) to provide isolated user environments. This PP does not 
+		address virtualization on mobile devices. Nor does it address application virtualization or containers.<br></br>
+		
 		This document describes the high-level set of security requirements that client 
 		virtualization software must satisfy when evaluated against the PP under development.
 	</section>
@@ -60,14 +55,17 @@
 			(ESR) and for the TC to consider when writing the PP.
 		-->
 		<ul>
-			<li>A user with administrator privileges on the VS creates and runs one or more VMs locally
+			<li>Locally Managed Client - A local administrator creates and runs one or more VMs locally.  
+				This client could be stand-alone or connected to a network.
 			</li>
-			<li>An enterprise administrator for the VS centrally manages one or more client hypervisors, 
-				creating and configuring VMs which are then pushed to the clients.  These VMs are then 
-				available for users on that client to run using the computing resources of that client. 
-				(Note that this is not Virtual Desktop Infrastructure where the hypervisors and the VMs 
-				run on remote servers.  While both can be centrally managed and accessed from clients, 
-				for client virtualization, the VMs are local to the endpoint machine).
+			<li>Enterprise Managed Client - An enterprise administrator for the VS centrally manages one or 
+				more client hypervisors, creating and configuring VMs which are then pushed to the clients.  These 
+				VMs are then available for users on that client to run using the computing resources of that client. 
+				(Note that this is not Virtual Desktop Infrastructure where the hypervisors and the VMs run on remote 
+				servers.  While both can be centrally managed and accessed from clients, for client virtualization, 
+				the VMs are local to the endpoint machine).
+			</li>
+			<li>Headless Client – A VM is used by a program without direct human interaction.
 			</li>
 		</ul>
 	</section>
@@ -197,6 +195,18 @@
 			</li>
 		</ul>
 	</section>
+	
+	<section title="Objective Requirements" id="objective"> 
+		Requirements captured in this section specify security-relevant behavior that is not expected to be 
+		realized currently in products of this type, but they are capabilities that may be mandated in future 
+		versions of the ESR and resulting PPs. 
+		<ul>
+			<li>Support for Introspection
+			</li>
+			<li>Collection of Integrity Measurements
+			</li>
+		</ul>
+	</section>
 
 	<section title="Outside the TOE's Scope" id="outsidescope">
 		<!--
@@ -214,7 +224,7 @@
 			</li>
 			<li>Software installed inside VMs that is unrelated to the functioning of the Virtualization System
 			</li>
-			<li>Virtualization on mobile devices or embedded systems
+			<li>Virtualization on mobile devices
 			</li>
 			<li>Application virtualization
 			</li>
