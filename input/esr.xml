@@ -9,7 +9,7 @@
 		<identifier>42</identifier>
 		<version>0.1</version>
 		<status>draft</status>
-		<issuedate>3 February 2016</issuedate>
+		<issuedate>7 March 2016</issuedate>
 		<approver/>
 		<supercedes/>
 	</intro>
@@ -33,12 +33,14 @@
 		-->
 		Client Virtualization, for the purposes of this PP, refers to a virtualization system (VS) that implements 
 		virtualized hardware components locally on an endpoint machine.  Endpoints are typically client hardware 
-		such as desktop or laptop computers that a user interacts with directly. It creates a virtualized hardware 
+		such as desktop or laptop computers that a user interacts with directly, but may also include headless embedded
+		systems without direct human interaction. It creates a virtualized hardware 
 		environment for each instance of a guest operating system (virtual machines or VMs) permitting these 
 		environments to execute concurrently while maintaining the appearance of isolation and exclusive control 
 		over assigned computing resources. Client virtualization is generally used on endpoint systems, making use 
 		of the local machine's resources (memory, CPU, etc.) to provide isolated user environments. This PP does not 
-		address virtualization on mobile devices. Nor does it address application virtualization or containers.<br></br>
+		address virtualization on mobile devices (typically devices that use a baseband processor and/or connect to a 
+		cellular network). Nor does it address application virtualization or containers.<br></br>
 		
 		This document describes the high-level set of security requirements that client 
 		virtualization software must satisfy when evaluated against the PP under development.
@@ -84,7 +86,7 @@
 			<li>The platform onto which the Virtualization System is installed including the hardware, 
 				firmware, and host operating system
 			</li>
-			<li>The Virtual Machine Manager (VMM)
+			<li>The Virtual Machine Manager (VMM) including the Hypervisor and Service VMs
 			</li>
 			<li>The Management Subsystem (if applicable)
 			</li>
@@ -205,6 +207,8 @@
 			</li>
 			<li>Collection of Integrity Measurements
 			</li>
+			<li>Maintain the integrity of its communications channels according to system security policy
+			</li>
 		</ul>
 	</section>
 
@@ -224,7 +228,8 @@
 			</li>
 			<li>Software installed inside VMs that is unrelated to the functioning of the Virtualization System
 			</li>
-			<li>Virtualization on mobile devices
+			<li>Virtualization on mobile devices (typically devices that use a baseband processor and/or connect to a 
+				cellular network)
 			</li>
 			<li>Application virtualization
 			</li>
