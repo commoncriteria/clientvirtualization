@@ -1,4 +1,4 @@
-Protection Profile for Client Virtualization
+Protection Profile for Client Virtualization [![Build Status](https://jenkins-criteria.rhcloud.com/buildStatus/icon?job=protection-profiles/clientvirtualization)](https://jenkins-criteria.rhcloud.com/job/protection-profiles/job/clientvirtualization/)
 ============
 
 Protection Profile for Client Virtualization
