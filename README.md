@@ -1,12 +1,13 @@
-Protection Profile for Client Virtualization [![Build Status](https://travis-ci.org/commoncriteria/clientvirtualization.svg?branch=master)](https://travis-ci.org/commoncriteria/clientvirtualization)
+Protection Profile for Client Virtualization 
 ============
+[![Build Status](https://travis-ci.org/commoncriteria/clientvirtualization.svg?branch=master)](https://travis-ci.org/commoncriteria/clientvirtualization)
 
 Protection Profile for Client Virtualization
 
 ## Working Draft
-[Essential Security Requirements (ESR)](http://common-criteria.rhcloud.com/clientvirtualization/output/clientvirtualization-esr.html)
+[Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/clientvirtualization/clientvirtualization-esr.html)
 
-[Protection Profile for Client Virtualization](http://common-criteria.rhcloud.com/clientvirtualization/output/clientvirtualization-release.html)
+[Protection Profile for Client Virtualization](https://commoncriteria.github.io/pp/clientvirtualization/clientvirtualization-release.html)
 
 ## Release Version
 
