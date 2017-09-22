@@ -4,7 +4,7 @@
 <ESR xmlns="http://common-criteria.rhcloud.com/ns/esr" name="Client Virtualization">
 
 	<intro>
-		<esrtitle>Protection Profile for Client Virtualization</esrtitle>
+		<esrtitle>Client Virtualization Essential Security Requirements</esrtitle>
 		<maintainer>National Information Assurance Partnership</maintainer>
 		<identifier>42</identifier>
 		<version>0.1</version>
