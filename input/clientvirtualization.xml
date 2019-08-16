@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
 
-<?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<PP xmlns="http://common-criteria.rhcloud.com/ns/cc" name="Client Virtualization"
-    xmlns:htm="http://www.w3.org/1999/xhtml"> 
-    <PPReference title="PP Reference" id="ID003">
+<?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>    
+<PP xmlns="https://niap-ccevs.org/cc/v1" name="Client Virtualization"
+    xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes">
+    <PPReference>
         <ReferenceTable>
             <PPTitle>Protection Profile for Virtualization Extended Package
                 Client Virtualization</PPTitle>
             <PPVersion>1.0</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
             <PPPubDate>2016-11-17</PPPubDate>
-            <PPCertificationID>unassigned</PPCertificationID>
-            <CCVersion>Version 3.0</CCVersion>
             <Keywords>Virtualization</Keywords>
-            <entry>
-                <name>Registration</name>
-                <description>National Information Assurance Partnership</description>
-            </entry>
         </ReferenceTable>
     </PPReference>
-    <RevisionHistory role="draft">
+    <RevisionHistory>
         <entry>
             <version>1.0</version>
             <date>2016-11-17</date>
@@ -147,7 +141,7 @@
                     <htm:b>Extended SFRs</htm:b> operation: identified by having a label "EXT" after the SFR name</htm:li>
             </htm:ul>
             <subsection id="fmt" title="Security Management (FMT)">
-                <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior"  status="threshold">
+                <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
                     <f-element id="FMT_MOF_EXT.1.1">
                         <title>The TSF shall be capable of supporting 
                             <selectables>
@@ -160,10 +154,10 @@
                     <f-element id="FMT_MOF_EXT.1.2">
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator or User as shown in Table 1, based on the following key:<htm:br></htm:br><htm:br></htm:br>
                             <htm:ul style="list-style: none;">
-                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
-                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
-                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
-                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br><htm:br></htm:br>
+                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br>
+                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br>
+                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br>
+                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br>
                             </htm:ul>
                             <htm:center><htm:h4>Table 1 – Client Virtualization Management Functions</htm:h4></htm:center>
                             <htm:table>
