@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
 
-<?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>    
+<!-- <?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>    -->
+
 <PP xmlns="https://niap-ccevs.org/cc/v1" name="Client Virtualization"
-    xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes">
+    xmlns:h="http://www.w3.org/1999/xhtml" type="module">
+
     <PPReference>
         <ReferenceTable>
             <PPTitle>Protection Profile for Virtualization Extended Package
