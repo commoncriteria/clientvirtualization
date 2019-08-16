@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
+<?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<!-- <?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>    -->
-
-<PP xmlns="https://niap-ccevs.org/cc/v1" name="Client Virtualization"
-    xmlns:h="http://www.w3.org/1999/xhtml" type="module">
+<Module boilerplate="yes" target-products="Client Virtualization" xmlns="https://niap-ccevs.org/cc/v1"
+  name="Client Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
 
     <PPReference>
         <ReferenceTable>
@@ -22,7 +21,6 @@
             <date>2016-11-17</date>
             <subject>Initial Publication</subject>
         </entry>
-
     </RevisionHistory>
     
     <chapter id="intro" title="Introduction">
@@ -484,4 +482,4 @@
       
       
     -->
-</PP>
+</Module>
