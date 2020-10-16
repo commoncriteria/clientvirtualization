@@ -2,35 +2,99 @@
 <?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
 <?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<Module boilerplate="yes" target-products="Client Virtualization" xmlns="https://niap-ccevs.org/cc/v1"
+<Module boilerplate="yes" target-products="Client Virtualization Systems" xmlns="https://niap-ccevs.org/cc/v1"
   name="Client Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
 
     <PPReference>
         <ReferenceTable>
-            <PPTitle>Protection Profile for Virtualization Extended Package
-                Client Virtualization</PPTitle>
             <PPVersion>1.0</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
             <PPPubDate>2016-11-17</PPPubDate>
-            <Keywords>Virtualization</Keywords>
+            <Keywords>Client Virtualization</Keywords>
+        </ReferenceTable>
+        <ReferenceTable>
+            <PPVersion>1.1</PPVersion>
+            <PPAuthor>National Information Assurance Partnership</PPAuthor>
+            <PPPubDate>2020-11-17</PPPubDate>
+            <Keywords>Client Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
+
     <RevisionHistory>
         <entry>
             <version>1.0</version>
             <date>2016-11-17</date>
             <subject>Initial Publication</subject>
         </entry>
+        <entry>
+            <version>1.1</version>
+            <date>2020-11-17</date>
+            <subject>Converted to PP-Module</subject>
+        </entry>
     </RevisionHistory>
     
-    <chapter id="intro" title="Introduction">
-        <section id="over" title="Overview">
-            The scope of this Extended Package (EP) is to describe the security functionality of a Client Virtualization product in terms of [CC] and to define functional and assurance requirements for such products. This EP is not complete in itself, but rather extends the Protection Profile for Virtualization (Base Virtualization PP). This is because Client Virtualization is a specific type of Virtualization System and is expected to implement security functionality that is not common to all Virtualization Systems in general. Therefore, additional SFRs have been defined in this EP to define security functionality that is unique to this particular type of Virtualization System.
-        </section>
-        <section id="terms" title="Terms">
-            All relevant terminology for this EP are defined in the Base Virtualization PP.
-        </section>
-        <section id="targets" title="Compliant Targets of Evaluation">
+
+  <chapter id="intro" title="Introduction">
+  
+    <section id="over" title="Overview">
+      The scope of this PP-Moduke is to define the security functionality of a Client Virtualization product in terms of [CC] and to define functional
+      and assurance requirements for such products. This PP-Module is not complete in itself, but rather
+      is intended for use with the following Base-PP:
+	   
+	      <htm:ul>
+		      <htm:li>Protection Profile for Virtualization, Version 1.1.</htm:li>
+	      </htm:ul>    
+      
+    	This Base-PP is valid because Client Virtualization is a specific type of Virtualization System and is expected to
+      implement security functionality that is not common to all Virtualization Systems. One additional SFR
+      has been defined in this PP-Module to define security functionality that is unique to this
+      particular type of Virtualization System.        
+
+    </section>
+    
+    <tech-terms>
+        <term full="Administrator">Administrators perform management activities on the VS. These management functions 
+          do not include administration of software running within Guest VMs, such as the Guest OS. Administrators need
+          not be human as in the case of embedded or headless VMs. Administrators are often nothing more than software
+          entities that operate within the VM.</term>
+      <term full="Domain">A Domain or Information Domain is a policy construct that groups together execution 
+          environments and networks by sensitivity of information and access control policy. For example, classification
+          levels represent information domains. Within classification levels, there might be other domains representing
+          communities of interest or coalitions. In the context of a VS, information domains are generally implemented
+          as collections of VMs connected by virtual networks. The VS itself can be considered an Information Domain, 
+          as can its Management Subsystem.</term>
+      <term full="Guest Operating System (OS)">An operating system that runs within a Guest VM.</term>
+      <term full="Guest VM">A Guest VM is a VM that contains a virtual environment for the execution of an independent
+          computing system. Virtual environments execute mission workloads and implement customer-specific client or
+          server functionality in Guest VMs, such as a web server or desktop productivity applications.</term>
+     <term full="Host Operating System (OS)">An operating system onto which a VS is installed. Relative to the VS, 
+          the Host OS is part of the Platform.</term>
+      <term full="Hypervisor">The Hypervisor is part of the VMM. It is the software executive of the physical platform
+          of a VS. A Hypervisor’s primary function is to mediate access to all CPU and memory resources, but it is also
+          responsible for either the direct management or the delegation of the management of all other hardware
+          devices on the hardware platform.</term>
+      <term full="Hypercall">An API function that allows VM-aware software running within a VM to invoke VMM functionality.</term>
+      <term full="Management Subsystem">Components of the VS that allow VS Administrators to configure and manage the
+          VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network
+          configuration, and allocation of physical resources.</term>
+      <term abbr="OS" full="Operating System"/>
+      <term full="Platform">The hardware, firmware, and software environment into which a VS is installed and executes.</term>
+      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators.
+		      Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software
+		      entities that operate within the VM.</term>
+      <term full="Virtual Machine" abbr="VM">A Virtual Machine is a virtualized hardware environment in which an operating system
+		      may execute.</term>
+      <term full="Virtual Machine Manager" abbr="VMM">A VMM is a collection of software components responsible for enabling VMs to
+		      function as expected by the software executing within them. Generally, the VMM consists of a Hypervisor, Service 
+		      VMs, and other components of the VS, such as virtual devices, binary translation systems, and physical device
+		      drivers. It manages concurrent execution of all VMs and virtualizes platform resources as needed.</term>
+      <term full="Virtualization System" abbr="VS">A software product that enables multiple independent computing systems to 
+		      execute on the same physical hardware platform without interference from one other. For the purposes of this 
+		      document, the VS consists of a Virtual Machine Manager (VMM), Virtual Machine abstractions, a management subsystem,
+		      and other components.</term>
+    </tech-terms>
+    
+    <section id="targets" title="Compliant Targets of Evaluation">
             Client Virtualization, for the purposes of this EP, refers to a Virtualization System that implements virtualized hardware components locally on an endpoint machine. Endpoints are typically client hardware such as desktop or laptop computers that a user interacts with directly, but may also include headless embedded systems without direct human interaction. A Virtualization System creates a virtualized hardware environment for each instance of a guest operating system (a virtual machine) permitting these environments to execute concurrently while maintaining isolation and the appearance of exclusive control over assigned computing resources. Client virtualization is generally used on endpoint systems, making use of the local machine's resources (memory, CPU, etc.) to provide isolated user environments. This document does not address virtualization on mobile devices (typically devices that use a baseband processor and/or connect to a cellular network), nor does it address application virtualization or containers.
             <subsection id="bound" title="TOE Boundary">
                 The TOE boundary is the same as that which is defined for a Virtualization System in general. Refer to the Base Virtualization PP for an outline of the TOE boundary.
