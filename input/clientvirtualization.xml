@@ -108,7 +108,7 @@
 	    to execute concurrently while maintaining isolation and the appearance of exclusive control
 	    over assigned computing resources. Client virtualization is generally used on endpoint 
 	    systems, making use of the local machine's resources (memory, CPU, etc.) to provide 
-	    isolated user environments.<hth:br/><htm:br/>
+	    isolated user environments.<htm:br/><htm:br/>
 	    This document does not address virtualization on mobile devices (typically devices that use
 	    a baseband processor or connect to a cellular network), nor does it address application 
 	    virtualization or containers.
@@ -348,11 +348,11 @@
                                     <htm:th>Notes (all SFR references are from the Base Virtualization PP</htm:th> 
                                 </htm:tr>
                                 <htm:tr>
-                                    <htm:td>1</htm:th> 
-                                    <htm:td>Ability to update the Virtualization System</htm:th> 
-                                    <htm:td>X</htm:th> 
-                                    <htm:td>N</htm:th> 
-                                    <htm:td>See FPT_TUD_EXT.1</htm:th> 
+                                    <htm:td>1</htm:td> 
+                                    <htm:td>Ability to update the Virtualization System</htm:td> 
+                                    <htm:td>X</htm:td> 
+                                    <htm:td>N</htm:td> 
+                                    <htm:td>See FPT_TUD_EXT.1</htm:td> 
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>2</htm:td>
