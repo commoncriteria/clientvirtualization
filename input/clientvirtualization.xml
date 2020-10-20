@@ -329,7 +329,9 @@
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
-                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator or User as shown in Table 1, based on the following key:<htm:br></htm:br><htm:br></htm:br>
+                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator
+				or User as shown in the below table:<htm:br/><htm:br/>
+				<ctr id="fmt-mof-table" ctr-type="Table">: Management Functions</ctr><htm:br/><htm:br/>								
                             <htm:ul style="list-style: none;">
                                 <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br>
                                 <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br>
