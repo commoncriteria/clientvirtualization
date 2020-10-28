@@ -2,6 +2,15 @@
 <?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
 <?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
+
+<!--  
+	Changes for version 1.1
+	- Converted into XML
+	- Converted into a PP-Module
+	- TD0360 Integrated
+	- Rationales and other PP-Module crap added
+-->
+
 <Module boilerplate="yes" target-products="Client Virtualization Systems" xmlns="https://niap-ccevs.org/cc/v1"
   name="Client Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
 
@@ -29,7 +38,7 @@
         <entry>
             <version>1.1</version>
             <date>2020-11-17</date>
-            <subject>Converted to PP-Module</subject>
+            <subject>Converted to PP-Module and applied all active TDs</subject>
         </entry>
     </RevisionHistory>
     
@@ -466,7 +475,7 @@
                                 <htm:tr>
                                     <htm:td>17</htm:td>
                                     <htm:td>Ability to configure name/address of directory server to bind with</htm:td>
-                                    <htm:td>X</htm:td>
+                                    <htm:td>S</htm:td>
                                     <htm:td>O</htm:td>
                                     <htm:td> </htm:td>
                                 </htm:tr>
@@ -475,7 +484,7 @@
                                     <htm:td>Ability to configure name/address of audit/logging server to which to send audit/logging records</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>Must be selected if "directory-based" is selected anywhere in FIA_UAU.5.1 in the Base Virtualization PP.</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>19</htm:td>
@@ -539,7 +548,7 @@
                             The ST author is expected to update this table with an indication as to 
 				whether any of the ‘optional’ or ‘selection-based’ functions are 
 				included as part of the TOE. The ST author may also omit the ‘Notes’ 
-				column as it is provided in this EP as an aid to the ST author in 
+				column as it is provided in this PP-Module as an aid to the ST author in 
 				constructing this table.<htm:br/><htm:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1,
 				and FMT_SMR.2.<htm:br/><htm:br/>
