@@ -314,7 +314,7 @@
 		  
 	          <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
         	  	<audit-table table="mandatory">
-  	     			<h:br/><h:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
+  	     			<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
 	  		</audit-table>
 	         </subsection>
 
