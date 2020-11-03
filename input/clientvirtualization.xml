@@ -15,13 +15,7 @@
   name="Client Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
 
     <PPReference>
-        <ReferenceTable>
-            <PPVersion>1.0</PPVersion>
-            <PPAuthor>National Information Assurance Partnership</PPAuthor>
-            <PPPubDate>2016-11-17</PPPubDate>
-            <Keywords>Client Virtualization</Keywords>
-        </ReferenceTable>
-        <ReferenceTable>
+       <ReferenceTable>
             <PPVersion>1.1</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
             <PPPubDate>2020-11-17</PPPubDate>
@@ -154,18 +148,21 @@
                 </description>
             </usecase>
             </usecases>
+<!--
             The use case(s) that are applicable to the TOE may influence the selections and a
 		ssignments made for certain requirements in both this PP-Module and in the base PP.
 		For example, a locally managed client (use case 1) may not necessarily provide remote
 		administration which would exempt it from claiming the selection-based requirement 
 		FTP_TRP.1 in the base PP.
+
+-->
         </section>
     </chapter>
 	
 	<!-- 2. Conformance Claims -->
-    <chapter id="conf" title="Conformance Claims">
+    <chapter id="conf" title="Conformance Claims" boilerplate="no">
     <cclaims>
-        <cclaim title="Conformance Statement">
+        <cclaim name="Conformance Statement">
             <description>
                 This PP-Module inherits exact conformance as required from the Virtualization PP and as
 		    defined in the CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and
@@ -179,13 +176,13 @@
 	    	There are no other PP-Modules that are allowed to be specified in a PP-Configuration with this PP-Module.
             </description>
         </cclaim>
-        <cclaim title="CC Conformance Claims">
+        <cclaim name="CC Conformance Claims">
             <description>
                 This PP Module is conformant to Parts 2 (extended) and 3 (conformant) of Common Criteria Version 3.1, 
                 Release 5 [CC].
             </description>
         </cclaim>
-        <cclaim title="Package Claims">
+        <cclaim name="Package Claims">
            <description>
                 This PP-Module does not directly interface with any Package.
             </description>
@@ -206,27 +203,27 @@
         <threats>
 	      <threat name="T.UNAUTHORIZED_UPDATE">
 		      <description>See Virtualization PP, Section 3.1.</description>
+		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
 		      <objective-refer ref="O.VMM_INTEGRITY">
 			      <rationale>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify 
 				      the VS is through a trusted update process initiated by an authorized Administrator
 				      as required by FMT_MOF_EXT.
 			      </rationale>
 		      </objective-refer>
-		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
 	      </threat>
 	      <threat name="T.UNAUTHORIZED_ACCESS">
 		      <description>See Virtualization PP, Section 3.1.</description>
+		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
 		      <objective-refer ref="O.MANAGEMENT_ACCESS">
 			      <rationale>Access to management functions must be limited to authorized Administrators as
 				      managed through controls required by FMT_MOF_EXT.1.</rationale>
 		      </objective-refer>
-		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
 	      </threat>		      
 	      </threats>     
       </section>
 	    
 	<!-- 3.2 Assumptions -->
-      <section id="Assumptions" title="Assumptions"/>
+      <section id="Assumptions" title="Assumptions"><assumptions/></section>
 	    	    
   	 <!-- 3.3 Organizational Security Policies -->
      <section id="securityPolicy" title="Organizational Security Policies">
@@ -245,19 +242,19 @@
 		<SOs>
 			<SO name="O.VMM_INTEGRITY">
 				<description>See Virtualization PP, Section 4.1.</description>
+				<consistency-rationale>This objective comes directly from the PP.</consistency-rationale> 
 				<addressed-by>FMT_MOF_EXT.1</addressed-by>
 				<rationale>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify 
 				      the VS is through a trusted update process initiated by an authorized Administrator
 				      as required by FMT_MOF_EXT.1.</rationale>
-<!--				<consistency-rationale>This objective comes directly from the PP.</consistency-rationale>  -->
 			</SO>
 			<SO name="O.MANAGEMENT_ACCESS">
 				<description>See Virtualization PP, Section 4.1.</description>
+				<consistency-rationale>QQQ DOUBLE CHECK This objective comes directly from the PP.</consistency-rationale>  
 				<addressed-by>FMT_MOF_EXT.1</addressed-by>
 				<rationale>Access to management functions must be limited to authorized Administrators as
 				      managed through controls required by FMT_MOF_EXT.1.</rationale>
-<!--				<consistency-rationale>This objective comes directly from the PP.</consistency-rationale>  -->
-			</SO>
+		</SO>
 		</SOs>
         </section>
 	    
@@ -559,7 +556,7 @@
                                     <htm:td>27</htm:td>
                                     <htm:td><selectables>
 					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate.</selectable>
-					    </selectables>
+					    <selectable>PUT SOMETHIGN HERE</selectable></selectables>
 				    </htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>N</htm:td>
@@ -626,7 +623,9 @@
                 </f-component>
             </subsection>
 	  </man-sfrs>
-
+          <opt-sfrs/>
+          <sel-sfrs/>
+          <obj-sfrs/>
 	    <!-- 5.3 TOE Security Functional Requirements Rationale -->
     </chapter>
     
@@ -659,5 +658,8 @@
     <appendix id="acro" title="Acronyms">
         All relevant acronyms for this PP-Module are defined in the Base Virtualization PP.
     </appendix>
+    <bibliography><cc-entry/>
+    </bibliography>
+    <acronyms/>
 </Module>
 	
