@@ -155,7 +155,7 @@
             </usecase>
             </usecases>
             The use case(s) that are applicable to the TOE may influence the selections and a
-		ssignments made for certain requirements in both this PP-module and in the base PP.
+		ssignments made for certain requirements in both this PP-Module and in the base PP.
 		For example, a locally managed client (use case 1) may not necessarily provide remote
 		administration which would exempt it from claiming the selection-based requirement 
 		FTP_TRP.1 in the base PP.
@@ -174,8 +174,8 @@
             	<htm:ul>
               		<htm:li>Protection Profile for Virtualization, Version 1.1</htm:li>
             	</htm:ul>
-           	A product must be evaluated against this Client Virtualization PP Module in conjunction with the base
-            	Virtualization PP. A product may not be evaluated solely against this Server Virtualization PP Module.<htm:br/><htm:br/>
+           	A product must be evaluated against this Client Virtualization PP-Module in conjunction with the base
+            	Virtualization PP. A product may not be evaluated solely against this Client Virtualization PP-Module.<htm:br/><htm:br/>
 	    	There are no other PP-Modules that are allowed to be specified in a PP-Configuration with this PP-Module.
             </description>
         </cclaim>
@@ -310,7 +310,14 @@
 	</base-pp>
 		
 	 <!-- 5.2 TOE Security Functional Requirements -->
-	  <man-sfrs>	
+	  <man-sfrs>
+		  
+	          <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
+        	  	<audit-table table="mandatory">
+  	     			<h:br/><h:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
+	  		</audit-table>
+	         </subsection>
+
 		  <subsection id="management-fmt" title="Security Management (FMT)">
 			<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
            			<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
