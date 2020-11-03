@@ -165,7 +165,7 @@
 	<!-- 2. Conformance Claims -->
     <chapter id="conf" title="Conformance Claims">
     <cclaims>
-        <cclaim title="Conformance Statement">
+        <cclaim name="Conformance Statement">
             <description>
                 This PP-Module inherits exact conformance as required from the Virtualization PP and as
 		    defined in the CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and
@@ -179,13 +179,13 @@
 	    	There are no other PP-Modules that are allowed to be specified in a PP-Configuration with this PP-Module.
             </description>
         </cclaim>
-        <cclaim title="CC Conformance Claims">
+        <cclaim name="CC Conformance Claims">
             <description>
                 This PP Module is conformant to Parts 2 (extended) and 3 (conformant) of Common Criteria Version 3.1, 
                 Release 5 [CC].
             </description>
         </cclaim>
-        <cclaim title="Package Claims">
+        <cclaim name="Package Claims">
            <description>
                 This PP-Module does not directly interface with any Package.
             </description>
