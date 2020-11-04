@@ -275,7 +275,7 @@
     <chapter id="sfr" title="Security Requirements">
 	    
 	<!-- 5.1 Virtualization PP -->
-	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization"
+	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization" plural="Virtualization"
       		url="https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408"
       		xmlurl="https://github.com/commoncriteria/virtualization/blob/master/input/virtualization.xml">
 
