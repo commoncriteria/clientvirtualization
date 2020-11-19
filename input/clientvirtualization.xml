@@ -179,7 +179,7 @@
         </cclaim>
         <cclaim name="Package Claims">
            <description>
-                This PP-Module conforms to the TLS Package. 
+                This PP-Module conforms to the Functional Package for TLS and the Extended Package for Secure Shell (SSH).
             </description>
         </cclaim>
     </cclaims>
