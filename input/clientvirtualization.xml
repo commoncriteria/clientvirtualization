@@ -645,6 +645,14 @@
 	  Auditable events for Selecton-based Requirements:	
 	</audit-table>   -->
     </appendix> 
+	
+    <appendix id="ent" title="Entropy">
+	The TOE does not require any additional supplementary information to describe its entropy source(s)
+	beyond the requirements outlined in the ‘Entropy Documentation and Assessment’ section of the Base
+	Virtualization PP. As with other base PP requirements, the only additional requirement is that the
+	entropy documentation also applies to the specific Client Virtualization capabilities of the TOE in
+	addition to the functionality required by the base PP.
+    </appendix>
 
 <!-- Appendix: Referneces -->	
 	
