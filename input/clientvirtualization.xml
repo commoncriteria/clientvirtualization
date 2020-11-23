@@ -340,12 +340,18 @@
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator
 				-or User as shown in the below table:<htm:br/><htm:br/>
                             <htm:center><htm:h4><ctr ctr-type="Table" id="manfunc">: Client Virtualization Management Functions</ctr></htm:h4></htm:center>
-                            <htm:ul style="list-style: none;">
-                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br>
-                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br>
-                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br>
-                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br>
-                            </htm:ul>
+			    <htm:div class="table-key" style="border-style: solid; padding: 5px;">
+				X = Mandatory (TOE must provide that function to that role)<htm:br/>
+				O = Optional (TOE may or may not provide that function to that role)<htm:br/>
+				N = Not Permitted (TOE must not provide that function to that role)<htm:br/>
+				S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)<htm:br/>
+			    </htm:div><!--
+                            <htm:ul class="table-key" style="list-style: none;">
+                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li>
+                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li>
+                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li>
+                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li>
+                            </htm:ul>-->
                             <htm:table>
                                 <htm:tr>
                                     <htm:th>Number</htm:th> 
