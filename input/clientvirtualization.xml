@@ -337,8 +337,8 @@
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
-                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator
-				-or User as shown in the below table:<htm:br/><htm:br/>
+                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
+				or User as shown in <ctr-ref ref-id="manfunc"/>, based on the following key:<htm:br/><htm:br/>
                             <htm:center><htm:h4><ctr ctr-type="Table" id="manfunc">: Client Virtualization Management Functions</ctr></htm:h4></htm:center>
 			    <htm:div class="table-key" style="border-style: solid; padding: 5px;">
 				X = Mandatory (TOE must provide that function to that role)<htm:br/>
