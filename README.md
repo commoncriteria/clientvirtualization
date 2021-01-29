@@ -1,4 +1,4 @@
-Extended Package for Client Virtualization 
+Functional Package for Client Virtualization 
 ============
 [![Build Status](https://travis-ci.com/commoncriteria/clientvirtualization.svg?branch=master)](https://travis-ci.com/commoncriteria/clientvirtualization) 
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/clientvirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/clientvirtualization/issues) 
