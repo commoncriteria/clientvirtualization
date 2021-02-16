@@ -1,6 +1,6 @@
 PP-Module for Client Virtualization 
 ============
-[![Build Status](https://travis-ci.com/commoncriteria/clientvirtualization.svg?branch=master)](https://travis-ci.com/commoncriteria/clientvirtualization) 
+[![Build Status](https://travis-ci.com/commoncriteria/clientvirtualization.svg?branch=master)](https://github.com/commoncriteria/clientvirtualization/actions) 
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/clientvirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/clientvirtualization/issues) 
 ![license](https://img.shields.io/badge/license-Unlicensed-blue.svg)
 
@@ -12,8 +12,8 @@ A list of products that have passed evaluation against this Protection Profile c
 
 ## Draft Version
 
-* [PP-Module for Client Virtualization](https://commoncriteria.github.io/pp/clientvirtualization/clientvirtualization-release.html) (html)
-* [PP-Module for Client Virtualization](https://commoncriteria.github.io/pp/clientvirtualization/clientvirtualization-release.pdf) (pdf)
+* [PP-Module for Client Virtualization](https://commoncriteria.github.io/clientvirtualization/clientvirtualization-release.html) (html)
+* [PP-Module for Client Virtualization](https://commoncriteria.github.io/clientvirtualization/clientvirtualization-release.pdf) (pdf)
 * [Supporting Documents for Client Virtualization](https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.html) (html)
 * [Supporting Documents for Client Virtualization](https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.pdf) (pdf)
 
