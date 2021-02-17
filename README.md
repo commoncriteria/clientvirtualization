@@ -1,6 +1,6 @@
 PP-Module for Client Virtualization 
 ============
-[![Build Status](https://travis-ci.com/commoncriteria/clientvirtualization.svg?branch=master)](https://github.com/commoncriteria/clientvirtualization/actions) 
+![Build](https://github.com/commoncriteria/clientvirtualization/workflows/Build/badge.svg) 
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/clientvirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/clientvirtualization/issues) 
 ![license](https://img.shields.io/badge/license-Unlicensed-blue.svg)
 
