@@ -598,7 +598,10 @@
 					that it describes which security management functions require 
 					Administrator privilege and the actions associated with each
 					management function. The evaluator shall verify that for each 
-					management function and role specified in <xref to="manfunc"/>, the defined 
+					management function and role specified in 
+                                        Table 3,
+                                        <!-- TODO: Fix reference <xref to="manfunc"/>, -->
+                                         the defined 
 					role is able to perform all mandatory functions as well as all 
 					optional or selection-based functions claimed in the ST.
 					<htm:br/><htm:br/>
@@ -613,11 +616,16 @@
 					function to be performed and that the function can be performed.<htm:br/><htm:br/>
 				</Guidance>
 				<Tests>
-				The evaluator shall test each management function for each role listed in the FMT_MOF_EXT.1.1 table 
-					<xref to="manfunc"/> in the ST to
+				The evaluator shall test each management function for each role listed in the FMT_MOF_EXT.1.1
+                                        Table 3
+					<!--TODO: Fix reference <xref to="manfunc"/> -->
+                                        in the ST to
 					demonstrate that the function can be performed by the role(s) that are authorized to do so and the result
 					of the function is demonstrated. The evaluator shall also verify for each claimed management function
-					in <xref to="manfunc"/> that if the TOE claims not to provide a particular role with access to the function, then it is not possible to access the 
+					in
+                                         Table 3,
+                                        <!-- TODO: Fix reference <xref to="manfunc"/>, -->
+                                        that if the TOE claims not to provide a particular role with access to the function, then it is not possible to access the 
 					TOE as that role and perform that function.
 					<htm:br/><htm:br/>
 				</Tests>
