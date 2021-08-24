@@ -5,11 +5,11 @@ PP-Module for Client Virtualization
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/clientvirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/clientvirtualization/issues) 
 ![license](https://img.shields.io/badge/license-Unlicensed-blue.svg)
 
-This repository hosts the draft version of the Extended Package for Client Virtualization based on the 
+This repository hosts the draft version of the PP-Module for Client Virtualization based on the 
 [Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/clientvirtualization/clientvirtualization-esr.html) for this technology class of 
 products. This repository is used to facilitate collaboration and development on the draft document. 
 See the [release](#Release-Version) section if you are looking for the officially released version for evaluations. 
-A list of products that have passed evaluation against this Protection Profile can be found [here](https://www.niap-ccevs.org/Profile/Info.cfm?id=409).
+A list of products that have passed evaluation against this PP-Module can be found [here](https://www.niap-ccevs.org/Profile/Info.cfm?id=409).
 
 ## Draft Version
 
