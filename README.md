@@ -1,9 +1,12 @@
 PP-Module for Client Virtualization 
 ============
-![Build](https://github.com/commoncriteria/clientvirtualization/workflows/Build/badge.svg) 
+![Build](https://github.com/commoncriteria/clientvirtualization/workflows/Build/badge.svg)
 ![Validate](https://github.com/commoncriteria/clientvirtualization/workflows/Validate/badge.svg)
+[![SanityChecks](https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/warnings-badge.svg)](https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/SanityChecksOutput.md)
+[![SpellCheck](https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/spell-badge.svg)](https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/SpellCheckReport.txt)
+[![QuickBuild](https://github.com/commoncriteria/clientvirtualization/actions/workflows/quick_build.yml/badge.svg)](https://commoncriteria.github.io/clientvirtualization/clientvirtualization-release.html)
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/clientvirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/clientvirtualization/issues) 
-![license](https://img.shields.io/badge/license-Unlicensed-blue.svg)
+
 
 This repository hosts the draft version of the PP-Module for Client Virtualization based on the 
 [Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/clientvirtualization/clientvirtualization-esr.html) for this technology class of 
