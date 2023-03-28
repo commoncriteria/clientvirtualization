@@ -1,10 +1,27 @@
 PP-Module for Client Virtualization 
 ============
-![Build](https://github.com/commoncriteria/clientvirtualization/workflows/Build/badge.svg)
-![Validate](https://github.com/commoncriteria/clientvirtualization/workflows/Validate/badge.svg)
-[![SanityChecks](https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/warnings-badge.svg)](https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/SanityChecksOutput.md)
-[![SpellCheck](https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/spell-badge.svg)](https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/SpellCheckReport.txt)
-[![QuickBuild](https://github.com/commoncriteria/clientvirtualization/actions/workflows/quick_build.yml/badge.svg)](https://commoncriteria.github.io/clientvirtualization/clientvirtualization-release.html)
+
+[cols="1,1,1,1,1,1,1,1"]
+|===
+8+|clientvirtualization 
+| https://github.com/commoncriteria/clientvirtualization/tree/master[master] 
+a| https://commoncriteria.github.io/clientvirtualization/master/clientvirtualization-release.html[📄]
+a|[link=https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/master/ValidationReport.txt]
+image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/validation.svg[Validation]
+a|[link=https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/master/SanityChecksOutput.md]
+image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/warnings.svg[SanityChecks]
+a|[link=https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/master/SpellCheckReport.txt]
+image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/spell-badge.svg[SpellCheck]
+a|[link=https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/master/TDValidationReport.txt]
+image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/tds.svg[TDs]
+a|image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/transforms.svg[transforms,150]
+a| [link=https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/master/HTMLs.adoc]
+image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/html_count.svg[HTML Count]
+[link=https://github.com/commoncriteria/clientvirtualization/blob/gh-pages/master/PDFs.adoc]
+image::https://raw.githubusercontent.com/commoncriteria/clientvirtualization/gh-pages/master/pdf_count.svg[PDF Count]
+|===
+
+
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/clientvirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/clientvirtualization/issues) 
 
 
