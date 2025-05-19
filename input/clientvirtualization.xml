@@ -249,10 +249,7 @@
         </section>
 	    
 	 <!-- 4.3 Security Objectives Rationale -->
-	<section title="Security Objectives Rationale" id="rationale">
-         <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
-         </section>	    
-    </section>
+
 	
 	
 	<!-- 5. Security Requirements -->
@@ -292,6 +289,7 @@
 		
 	 <!-- 5.2 TOE Security Functional Requirements -->
 	  <sfrs>
+        <man-sfrs>
 		  
 	          <section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
         	  	<audit-table table="mandatory" id="at-mandatory">
@@ -305,6 +303,7 @@
 				additional component, FMT_MOF_EXT.1. 
 				</mod-def>		
 			</ext-comp-def>
+        
 	    
 		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Client Virtualization product to manage security functionality
@@ -639,6 +638,8 @@
 		</audit-event>			
                 </f-component>
               </section>
+        </man-sfrs>
+              
 	  </sfrs>
     </section>
  
