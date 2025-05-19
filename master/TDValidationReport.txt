@@ -1,7 +1,5 @@
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:157:14: error: element "cclaims" not allowed here; expected text, element "CClaimsInfo", "_", "assignable", "choice", "comment", "ctr", "depends", "endnote", "equation", "figure", "implements", "no-link", "provides", "refinement", "replace", "requires", "rule", "selectables", "snip", "testlist" or "xref" or an element from another namespace
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:173:15: error: element "section" incomplete; missing required element "CClaimsInfo"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:176:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:258:23: error: element "base-pp" missing required attributes "name", "product", "short" and "version"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:276:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:290:10: error: element "sfrs" not allowed here; expected element "base-pp" or "man-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:639:15: error: element "section" incomplete; missing required element "man-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:188:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:244:23: error: element "base-pp" missing required attributes "name", "product", "short" and "version"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:262:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:276:10: error: element "sfrs" not allowed here; expected element "base-pp" or "man-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:625:15: error: element "section" incomplete; missing required element "man-sfrs"

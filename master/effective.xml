@@ -39,7 +39,7 @@
 	    the following Base-PP:
 	   
 	      <h:ul>
-		      <h:li>Protection Profile for Virtualization, Version 1.1, 14 Jun 2021.</h:li>
+		      <h:li>Protection Profile for Virtualization, Version 1.1, 14 Jun 2021.<comment> TBD</comment></h:li>
 	      </h:ul>    
       
     	This Base-PP is valid because Client Virtualization is a specific type of Virtualization System and is expected to
@@ -95,7 +95,7 @@
     
     <!-- 1.3 Compliant Targets of Evaluation -->
     <section id="targets" title="Compliant Targets of Evaluation">
-            Client Virtualization, for the purposes of this PP-Module, refers to a Virtualization 
+            <h:p>Client Virtualization, for the purposes of this PP-Module, refers to a Virtualization 
 	    System that implements virtualized hardware components locally on an endpoint machine. 
 	    Endpoints are typically client hardware such as desktop or laptop computers that a user 
 	    interacts with directly, but may also include headless embedded systems without direct 
@@ -104,10 +104,10 @@
 	    to execute concurrently while maintaining isolation and the appearance of exclusive control
 	    over assigned computing resources. Client virtualization is generally used on endpoint 
 	    systems, making use of the local machine's resources (memory, CPU, etc.) to provide 
-	    isolated user environments.<h:br/><h:br/>
+	    isolated user environments.</h:p><h:p>
 	    This document does not address virtualization on mobile devices (typically devices that use
 	    a baseband processor or connect to a cellular network), nor does it address application 
-	    virtualization or containers.
+	    virtualization or containers.</h:p>
  
 	    	<!-- 1.3.1 TOE Boundary -->
 	    <section id="TOEboundary" title="TOE Boundary">
@@ -153,30 +153,42 @@
     </section>
 	
 	<!-- 2. Conformance Claims -->
-    <section id="conf" title="Conformance Claims" boilerplate="no">
-    <cclaims>
-        <cclaim name="Conformance Statement">
-            <description>
-                This PP-Module inherits exact conformance as required from the Virtualization PP and as
-		    defined in the CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and
-		    Optional SFRs (dated May 2017). <h:p/> 
-	    	There are no other PP-Modules that are allowed to be specified in a PP-Configuration with this PP-Module.
-            </description>
-        </cclaim>
-        <cclaim name="CC Conformance Claims">
-            <description>
-                This PP Module is conformant to Parts 2 (extended) and 3 (extended) of Common Criteria Version 3.1, 
-                Release 5 [CC].
-            </description>
-        </cclaim>
-    </cclaims>
-    </section>
+<section title="Conformance Claims" id="sec-cclaims">
+
+	<!-- cc-version: cc-2022r1 or cc-31r5   -->
+	<!-- cc-approach: standard or direct-rationale  -->
+	<!-- display: Should this info be displayed in the Conformance -->
+	<!-- Claims section? If no, you have to write a free-form section -->
+	<CClaimsInfo cc-version="cc-2022r1" cc-approach="direct-rationale" display="yes">                 
+
+		<!-- Conformance for STs: exact, strict, or demonstrable -->
+		<cc-st-conf>exact</cc-st-conf>                  
+
+		<!-- Part 2 & 3 conformance (extended or conformant) -->
+		<cc-pt2-conf>extended</cc-pt2-conf>           
+		<cc-pt3-conf>extended</cc-pt3-conf>           
+
+		<!-- Claims conformance to these other PPs (none)-->
+		<cc-pp-conf/>              		  
+		
+		<!-- Can be in a configuration with these PPs and Modules -->
+		<cc-pp-config-with/>
+
+		<!-- Package claims -->
+        
+		<cc-pkg-claim/>
+
+		
+
+	</CClaimsInfo>
+  </section>  
+
 	
 	<!-- 3. Security Problem Description -->
     <section id="spd" title="Security Problem Description">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
-      enforce.<h:br/><h:br/>
+      enforce.
 	    
 	<!-- 3.1 Threats -->
       <section id="threats" title="Threats">
@@ -186,20 +198,15 @@
 	      <threat name="T.UNAUTHORIZED_UPDATE">
 		      <description>See Virtualization PP, Section 3.1.</description>
 		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
-		      <objective-refer ref="O.VMM_INTEGRITY">
-			      <rationale>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify 
-				      the VS is through a trusted update process initiated by an authorized Administrator
-				      as required by FMT_MOF_EXT.
-			      </rationale>
-		      </objective-refer>
+		      <addressed-by>FMT_MOF_EXT.1</addressed-by><rationale>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify the VS is through a trusted update process initiated by an authorized Administrator as required by FMT_MOF_EXT.1.</rationale>
+		      
 	      </threat>
 	      <threat name="T.UNAUTHORIZED_ACCESS">
 		      <description>See Virtualization PP, Section 3.1.</description>
 		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
-		      <objective-refer ref="O.MANAGEMENT_ACCESS">
-			      <rationale>Access to management functions must be limited to authorized Administrators as
+		      <addressed-by>FMT_MOF_EXT.1</addressed-by>
+				<rationale>Access to management functions must be limited to authorized Administrators as
 				      managed through controls required by FMT_MOF_EXT.1.</rationale>
-		      </objective-refer>
 	      </threat>		      
 	      </threats>     
       </section>
@@ -216,27 +223,6 @@
     <section id="objectives" title="Security Objectives">
 	    
  	    <!-- 4.1 Security Objectives for the TOE -->
-       <section id="TOEobjectives" title="Security Objectives for the TOE">
-            This PP-Module defines no additional TOE security objectives beyond those defined in the base Virtualization PP. Note however 
-		that the SFR defined in this PP-Module will assist in the achievement of the following objectives defined in the Base-PP:    
-		<SOs>
-			<SO name="O.VMM_INTEGRITY">
-				<description>See Virtualization PP, Section 4.1.</description>
-				<consistency-rationale>This objective comes directly from the PP.</consistency-rationale> 
-				<addressed-by>FMT_MOF_EXT.1</addressed-by>
-				<rationale>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify 
-				      the VS is through a trusted update process initiated by an authorized Administrator
-				      as required by FMT_MOF_EXT.1.</rationale>
-			</SO>
-			<SO name="O.MANAGEMENT_ACCESS">
-				<description>See Virtualization PP, Section 4.1.</description>
-				<consistency-rationale>This objective comes directly from the PP.</consistency-rationale>  
-				<addressed-by>FMT_MOF_EXT.1</addressed-by>
-				<rationale>Access to management functions must be limited to authorized Administrators as
-				      managed through controls required by FMT_MOF_EXT.1.</rationale>
-		</SO>
-		</SOs>
-        </section>
 	    
 	<!-- 4.2 Security Objectives for the Operational Environment -->
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">

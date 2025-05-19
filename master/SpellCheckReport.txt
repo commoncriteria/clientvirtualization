@@ -1,10 +1,12 @@
 output/clientvirtualization-release-linkable.html: CC2022
 output/clientvirtualization-release-linkable.html: CEM
 output/clientvirtualization-release-linkable.html: Systemss
+output/clientvirtualization-release-linkable.html: TBD
 output/clientvirtualization-release.html: Assessment’
 output/clientvirtualization-release.html: CC2022
 output/clientvirtualization-release.html: CEM
 output/clientvirtualization-release.html: Systemss
+output/clientvirtualization-release.html: TBD
 output/clientvirtualization-sd.html: AGD
 output/clientvirtualization-sd.html: CC2022
 output/clientvirtualization-sd.html: CEM
@@ -16,3 +18,4 @@ output/clientvirtualization.html: Assessment’
 output/clientvirtualization.html: CC2022
 output/clientvirtualization.html: CEM
 output/clientvirtualization.html: Systemss
+output/clientvirtualization.html: TBD
