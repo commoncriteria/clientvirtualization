@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
-<?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" 
-    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xsl-stylesheet type="text/xsl" href="../transforms/xsl/module/module2html.xsl"?>
 
+<!-- for a PP or Functional Package -->
+<?xml-model href="../transforms/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<!--  
-	Changes for version 1.1
-	- Converted into XML
-	- Converted into a PP-Module
-	- TD0360 Integrated
-	- Rationales and other PP-Module crap added
--->
+<!-- For PP or cPP -->
+<!-- Name of the TOE product  -->
+<!-- Plural name of the TOE product (optional)  -->
+<!-- Whether to use boilerplate text by default (can be disabled in sections) -->
+<!-- A short name for the PP (e.g. App or MDF) -->
+<Module boilerplate="yes" target-product="Client Virtualization Systems" 
+  name="Client Virtualization Systems"
+  xmlns="https://niap-ccevs.org/cc/v1"
+  xmlns:sec="https://niap-ccevs.org/cc/v1/section"
+  xmlns:h="http://www.w3.org/1999/xhtml">
 
-<Module  xmlns="https://niap-ccevs.org/cc/v1"
-	xmlns:htm="http://www.w3.org/1999/xhtml" xmlns:sec="https://niap-ccevs.org/cc/v1/section">
-  <product_class>Client Virtualization Systems</product_class>
-  <plural>Client Virtualization Systems</plural>
-  <name>Client Virtualization</name>
   <RevisionHistory>
     <entry>
       <version>1.0</version>
@@ -28,7 +26,21 @@
       <date>2021-06-14</date>
       <subject>Published as a PP-Module</subject>
     </entry>
+    <entry>
+      <version>1.2</version>
+      <date>2025-05-19</date>
+      <subject>CC2022 Conversion</subject>
+    </entry>
   </RevisionHistory>
+
+   <PPReference>
+    <ReferenceTable>
+      <PPVersion>1.1</PPVersion>
+      <PPAuthor>National Information Assurance Partnership</PPAuthor>
+      <PPPubDate>2025-03-28</PPPubDate>
+      <Keywords>QQQQ</Keywords>               <!-- This field is unused and optional -->
+    </ReferenceTable>
+  </PPReference>
   
   <!-- 1. Introduction -->
   <section id="Introduction" title="Introduction">
