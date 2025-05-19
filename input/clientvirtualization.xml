@@ -15,7 +15,18 @@
   xmlns:sec="https://niap-ccevs.org/cc/v1/section"
   xmlns:h="http://www.w3.org/1999/xhtml">
 
-  <RevisionHistory>
+
+
+   <PPReference>
+    <ReferenceTable>
+      <PPVersion>1.2</PPVersion>
+      <PPAuthor>National Information Assurance Partnership</PPAuthor>
+      <PPPubDate>2025-05-19</PPPubDate>
+      <Keywords>QQQQ</Keywords>               <!-- This field is unused and optional -->
+    </ReferenceTable>
+
+  </PPReference>
+    <RevisionHistory>
     <entry>
       <version>1.0</version>
       <date>2016-11-17</date>
@@ -32,16 +43,6 @@
       <subject>CC2022 Conversion</subject>
     </entry>
   </RevisionHistory>
-
-   <PPReference>
-    <ReferenceTable>
-      <PPVersion>1.1</PPVersion>
-      <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2025-03-28</PPPubDate>
-      <Keywords>QQQQ</Keywords>               <!-- This field is unused and optional -->
-    </ReferenceTable>
-  </PPReference>
-  
   <!-- 1. Introduction -->
   <section id="Introduction" title="Introduction">
 
