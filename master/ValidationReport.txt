@@ -1,4 +1,4 @@
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:206:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:276:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:635:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:636:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:224:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
+/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:294:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:652:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:653:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
