@@ -203,7 +203,7 @@
 
 	
 	<!-- 3. Security Problem Description -->
-    <section id="spd" title="Security Problem Description">
+    <sec:Security_Problem_Definition>
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
       enforce.
@@ -233,7 +233,7 @@
 	    	    
   	 <!-- 3.3 Organizational Security Policies -->
      <sec:Organizational_Security_Policies> <OSPs/> </sec:Organizational_Security_Policies>
-     </section>
+    </sec:Security_Problem_Definition>
 	
 	
 	<!-- 4. Security Objectives -->
