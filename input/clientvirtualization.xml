@@ -638,10 +638,10 @@
                 </f-component>
               </section>
         </man-sfrs>
-        <opt-sfr/>
-        <impl-dep-sfrs/>
-        <sel-sfrs/>
+        <opt-sfrs/>
         <obj-sfrs/>
+        <sel-sfrs/>
+        <impl-dep-sfrs/>
 
               
     </section>
