@@ -1,3 +1,3 @@
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:276:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:634:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:635:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:274:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:632:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:633:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
