@@ -1,6 +1,4 @@
 /home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:188:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
 /home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:258:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:623:19: error: element "opt-sfr" not allowed here; expected element "mod-sars" or "opt-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:624:25: error: element "impl-dep-sfrs" not allowed yet; missing required element "opt-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:625:20: error: element "sel-sfrs" not allowed here; expected the element end-tag
-/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:626:20: error: element "obj-sfrs" not allowed here; expected the element end-tag
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:624:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/output/effective.xml:625:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
