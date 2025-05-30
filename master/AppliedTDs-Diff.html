@@ -22,6 +22,8 @@
             <br>
             <a href="#Comment-2-">Comment: Comment-2-</a>
             <br>
+            <a href="#Comment-3-">Comment: Comment-3-</a>
+            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Client Virtualization Systems</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -202,7 +204,7 @@
                 <tr>
                     <td>
                         <div id="Management_Subsystem">Management Subsystem</div>
-                    </td><td>Components of the VS that allow VS Administrators to configure and manage the VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network configuration, and allocation of physical resources.</td>
+                    </td><td>Components of the VS that allow VS administrators to configure and manage the VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network configuration, and allocation of physical resources.</td>
                 </tr>
                 <tr>
                     <td>
@@ -212,7 +214,7 @@
                 <tr>
                     <td>
                         <div id="User">User</div>
-                    </td><td>Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators. Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software entities that operate within the VM.</td>
+                    </td><td>Users operate Guest VMs and are subject to configuration policies applied to the VS by administrators. Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software entities that operate within the VM.</td>
                 </tr>
                 <tr>
                     <td>
@@ -287,7 +289,21 @@
             <dt>Package Claim</dt>
             <p></p>
             <dd>
-                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any Functional or Assurance Packages.
+                <ul>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for Secure Shell Version 2.0 conformant.
+                    </li>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is Functional Package for Transport Layer Security Version 2.1 conformant.
+                    </li>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not conform to any assurance packages.
+                    </li>
+                </ul>
+            </dd>
+            <p></p>
+            <dd>
+                 The functional packages to which the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> conforms may include <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are not mandatory to claim for the sake of conformance. An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> that claims one or more of these functional packages may include any non-mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are appropriate to claim based on the capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> and on any triggers for their inclusion based inherently on the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> selections made. 
             </dd>
         </dl>
          
@@ -296,11 +312,11 @@
         <h2 class="indexable" data-level="2" id="threats">3.1 Threats</h2>
          This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines no additional threats beyond those defined in the base Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. Note however that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> will assist in the mitigation of the following threats defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>: 
         <dl>
-            <dt class="threat defined" id="T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</dt>
+            <dt class="threat defined" id="T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</dt>
             <dd>
                 <span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 3.1.</span>
             </dd>
-            <dt class="threat defined" id="T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</dt>
+            <dt class="threat defined" id="T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</dt>
             <dd>
                 <span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 3.1.</span>
             </dd>
@@ -317,7 +333,7 @@
         <h2 class="indexable" data-level="2" id="TOEEnvironment">4.1 Security Objectives for the TOE</h2>
          
         <dl>
-            <dt class="SO defined" id="O.VMM_INTEGRITY">O.VMM_INTEGRITY</dt>
+            <dt class="SO defined" id="O.MANAGEMENT_ACCESS">O.MANAGEMENT_ACCESS</dt>
             <dd>
                 <span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 4.1</span>
             </dd>
@@ -393,7 +409,7 @@
                     <a href="#FMT_MOF_EXT.1.2" class="abbr">FMT_MOF_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions, [<i>controlled by an Administrator or User as shown in <a href="#manfunc" class="manfunc-ref">Table <span class="counter">2</span></a>, based on the following key:</i>
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions, [<i>controlled by an administrator or user as shown in the key in <a href="#manfunc" class="manfunc-ref">Table <span class="counter">2</span></a>.</i>
                     <p></p>
                      
                     <center>
@@ -420,7 +436,7 @@
                             <td>1</td><td>Ability to update the Virtualization System</td><td>X</td><td>N</td><td>See FPT_TUD_EXT.1</td>
                         </tr>
                         <tr>
-                            <td>2</td><td>[<b>selection</b>: <span class="selectable-content" id="sel-mf-pwd-policy">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</span>, <span class="selectable-content" id="_s_4">Not applicable.</span>]</td><td>S</td><td>N</td><td>Must be selected if <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> includes FIA_PMG_EXT.1.</td>
+                            <td>2</td><td>[<b>selection</b>: <span class="selectable-content" id="sel-mf-pwd-policy">Ability to configure administrator password policy as defined in FIA_PMG_EXT.1</span>, <span class="selectable-content" id="_s_4">Not applicable.</span>]</td><td>S</td><td>N</td><td>Must be selected if <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> includes FIA_PMG_EXT.1.</td>
                         </tr>
                         <tr>
                             <td>3</td><td>Ability to create, configure and delete VMs</td><td>X</td><td>O</td><td></td>
@@ -507,13 +523,13 @@
                              This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> addresses the roles of the <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2 <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.
                             <br>
                             <br>
-                             Administration is considered &ldquo;local&rdquo; if the Administrator is physically present at the machine on which the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is installed.
+                             Administration is considered &ldquo;local&rdquo; if the administrator is physically present at the machine on which the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is installed.
                             <br>
                             <br>
-                             Administration is considered &ldquo;remote&rdquo; if communications between the Administrator and the Management Subsystem travel on a network. 
+                             Administration is considered &ldquo;remote&rdquo; if communications between the administrator and the Management Subsystem travel on a network. 
                             <br>
                             <br>
-                             There is no requirement to authenticate Users of the Virtualization System. Users that have access to VMs but not to the Management Subsystem need not authenticate to the Virtualization System in order to use Guest VMs. Requirements for authentication of <abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr> users is determined by the policies of the domains running within the Guest VMs. 
+                             There is no requirement to authenticate users of the Virtualization System. Users that have access to VMs but not to the Management Subsystem need not authenticate to the Virtualization System in order to use Guest VMs. Requirements for authentication of <abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr> users is determined by the policies of the domains running within the Guest VMs. 
                             <br>
                             <br>
                              For a <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> where the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is part of the platform and not part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, it is acceptable for the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> to invoke the Host <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> screen lock. 
@@ -536,10 +552,10 @@
                     <th>Threat</th><th>Addressed by</th><th>Rationale</th>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="1"><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_​UPDATE</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
+                    <td rowspan="1"><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_​ACCESS</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by limiting the management functions to be limited to authorized administrators as managed through controls required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="1"><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_​ACCESS</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by limiting the management functions to be limited to authorized Administrators as managed through controls required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
+                    <td rowspan="1"><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_​UPDATE</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
                 </tr>
             </table>
         </p>
@@ -556,10 +572,10 @@
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th>
             </tr>
             <tr>
-                <td><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td>
+                <td><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td>
             </tr>
             <tr>
-                <td><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td>
+                <td><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td>
             </tr>
         </table>
         <h3 id="conobj-b-virt" class="indexable" data-level="3">6.1.3 Consistency of OE Objectives </h3>
@@ -811,7 +827,7 @@
                     </span></td>
             </tr>
             <tr>
-                <td><span id="bib-base-pp">[VirtPP]</span></td><td><span class="description">Protection Profile for Virtualization, Version: 1.1, 2021-06-14</span></td>
+                <td><span id="bib-base-pp">[VirtPP]</span></td><td><span class="description">Protection Profile for Virtualization, Version: 1.1, 2021-06-14 <span style="" class="comment " id="Comment-3-">Update when new version is finalized.</span></span></td>
             </tr>
         </table>
     </body>

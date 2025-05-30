@@ -1,2 +1,0 @@
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:263:22: error: element "SO" incomplete; missing required element "addressed-by"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:266:22: error: element "SO" incomplete; missing required element "addressed-by"
