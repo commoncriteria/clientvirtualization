@@ -105,12 +105,13 @@
           responsible for either the direct management or the delegation of the management of all other hardware
           devices on the hardware platform.</term>
       <term full="Hypercall">An API function that allows VM-aware software running within a VM to invoke VMM functionality.</term>
-      <term full="Management Subsystem">Components of the VS that allow VS Administrators to configure and manage the
+      <term full="Management Subsystem">Components of the VS that allow VS administrators to configure and manage the
           VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network
           configuration, and allocation of physical resources.</term>
       <term abbr="OS" full="Operating System"/>
       <term full="Platform">The hardware, firmware, and software environment into which a VS is installed and executes.</term>
-      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators.
+      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to
+          the VS by administrators.
 		      Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software
 		      entities that operate within the VM.</term>
       <term full="Virtual Machine" abbr="VM">A Virtual Machine is a virtualized hardware environment in which an operating system
@@ -210,12 +211,10 @@
 		<cc-pp-config-with>
             <PP-cc-ref>Protection Profile for Virtualization 2.0</PP-cc-ref>  
         </cc-pp-config-with>
-		<!-- Package claims -->
-        
-		<cc-pkg-claim/>
-
-		
-
+	    <cc-pkg-claim>
+	        <FP-cc-ref conf="conformant">Functional Package for Secure Shell Version 2.0</FP-cc-ref>
+	        <FP-cc-ref conf="conformant">Functional Package for Transport Layer Security Version 2.1</FP-cc-ref>	       
+	    </cc-pkg-claim>
 	</CClaimsInfo>
   </section>  
 
@@ -231,16 +230,18 @@
         This PP-Module defines no additional threats beyond those defined in the base Virtualization PP. Note however that the
         SFRs defined in this PP-Module will assist in the mitigation of the following threats defined in the Base-PP:	      
         <threats>
-	      <threat name="T.UNAUTHORIZED_UPDATE">
+            <threat name="T.UNAUTHORIZED_ACCESS">
+                <description>See Virtualization PP, Section 3.1.</description>
+                <addressed-by>FMT_MOF_EXT.1</addressed-by>
+                <rationale>This SFR mitigates this threat by limiting the management functions to be limited to
+                    authorized administrators as managed through controls required by FMT_MOF_EXT.1.</rationale>
+            </threat>		      
+            <threat name="T.UNAUTHORIZED_UPDATE">
 		      <description>See Virtualization PP, Section 3.1.</description>
-		      <addressed-by>FMT_MOF_EXT.1</addressed-by><rationale>This SFR mitigates this threat by ensuring that the only way to modify the VS is through a trusted update process initiated by an authorized Administrator as required by FMT_MOF_EXT.1.</rationale>
-		      
+		      <addressed-by>FMT_MOF_EXT.1</addressed-by><rationale>This SFR mitigates this threat by ensuring that the only way to modify the VS is through a trusted update process
+		          initiated by an authorized administrator as required by FMT_MOF_EXT.1.</rationale>		      
 	      </threat>
-	      <threat name="T.UNAUTHORIZED_ACCESS">
-		      <description>See Virtualization PP, Section 3.1.</description>
-		      <addressed-by>FMT_MOF_EXT.1</addressed-by>
-				<rationale>This SFR mitigates this threat by limiting the management functions to be limited to authorized Administrators as managed through controls required by FMT_MOF_EXT.1.</rationale>
-	      </threat>		      
+	      
 	      </threats>     
       </section>
 	    
@@ -258,12 +259,24 @@
  	    <!-- 4.1 Security Objectives for the TOE -->
 	       <section id="TOEEnvironment" title="Security Objectives for the TOE">
 	           <SOs>
-	               <SO name="O.VMM_INTEGRITY">
+	               <SO name="O.MANAGEMENT_ACCESS">
 	                   <description>See Virtualization PP, Section 4.1</description>
+	                   <addressed-by>T.UNAUTHORIZED_ACCESS</addressed-by>
+	                   <rationale>Access to management functions must be
+	                       limited to authorized administrators as
+	                       managed through controls required by
+	                       FMT_MOF_EXT.1.</rationale>
 	               </SO>
 	               <SO name="O.VMM_INTEGRITY">
 	                   <description>See Virtualization PP, Section 4.1</description>
+	                   <addressed-by>T.UNAUTHORIZED_UPDATE</addressed-by>
+	                   <rationale>Integrity of a Virtualization System can be
+	                       maintained by ensuring that the only way to
+	                       modify the VS is through a trusted update
+	                       process initiated by an authorized
+	                       administrator as required by FMT_MOF_EXT.</rationale>
 	               </SO>
+	               
 	           </SOs>
 	           
 	       </section>
@@ -309,11 +322,11 @@
 	    <con-op-en>This PP does not introduce any new Security Objectives for the Operational Environment. Please refer to the Base-PP.</con-op-en>
 		
 		
-	
+	    <con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
+			managed through functionality described in this PP-module.</con-mod>
 		<con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
-		<con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
-			managed through functionality described in this PP-module.</con-mod>
+		
 	</base-pp>
 		
 	 <!-- 5.2 TOE Security Functional Requirements -->
@@ -354,8 +367,8 @@
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the Base-PP to be included in the ST.</note>
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
-                        <title>The TSF shall be capable of performing the following management functions, [<h:i>controlled by an Administrator 
-				or User as shown in <xref to="manfunc"/>, based on the following key:</h:i><h:p/>
+                        <title>The TSF shall be capable of performing the following management functions, [<h:i>controlled by an administrator 
+				            or user as shown in the key in <xref to="manfunc"/>.</h:i><h:p/>
                             <h:center><h:h4><ctr ctr-type="Table" pre="Table " id="manfunc">: Client Virtualization Management Functions</ctr></h:h4></h:center>
 			    <h:div class="table-key" style="border-style: solid; padding: 5px;">
 				X = Mandatory (TOE must provide that function to that role)<h:br/>
@@ -387,7 +400,7 @@
                                 <h:tr>
                                     <h:td>2</h:td>
                                     <h:td><selectables>
-					    <selectable id="sel-mf-pwd-policy">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</selectable>
+					    <selectable id="sel-mf-pwd-policy">Ability to configure administrator password policy as defined in FIA_PMG_EXT.1</selectable>
 					    <selectable>Not applicable.</selectable></selectables></h:td>
                                     <h:td>S</h:td>
                                     <h:td>N</h:td>
@@ -598,12 +611,12 @@
 				constructing the table.<h:br/><h:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1,
 				and FMT_SMR.2.<h:br/><h:br/>
-                            Administration is considered “local” if the Administrator is physically 
+                            Administration is considered “local” if the administrator is physically 
 				present at the machine on which the VS is installed.<h:br/><h:br/>
                             Administration is considered “remote” if communications between the
-				Administrator and the Management Subsystem travel on a network.
+				administrator and the Management Subsystem travel on a network.
 				<h:br/><h:br/>
-                            There is no requirement to authenticate Users of the Virtualization
+                            There is no requirement to authenticate users of the Virtualization
 				System. Users that have access to VMs but not to the Management
 				Subsystem need not authenticate to the Virtualization System in order 
 				to use Guest VMs. Requirements for authentication of VM users is
@@ -617,7 +630,7 @@
 				<TSS>
                             	The evaluator shall examine the TSS and Operational Guidance to ensure
 					that it describes which security management functions require 
-					Administrator privilege and the actions associated with each
+					administrator privilege and the actions associated with each
 					management function. The evaluator shall verify that for each 
 					management function and role specified in 
                                         Table 3,
@@ -629,7 +642,7 @@
 				</TSS>
 				<Guidance>
                             	The evaluator shall examine the Operational Guidance to ensure that it
-					describes how the Administrator and User are able to perform
+					describes how the administrator and user are able to perform
 					each management function that the ST claims the TOE supports.
 					<h:br/><h:br/>
                             	The evaluator shall verify for each claimed management function that 
@@ -678,7 +691,8 @@
     <bibliography>
       <entry id="bib-base-pp">
         <tag>VirtPP</tag>
-        <description>Protection Profile for Virtualization, Version: 1.1, 2021-06-14</description>
+        <description>Protection Profile for Virtualization, Version: 1.1,
+            2021-06-14 <comment>Update when new version is finalized.</comment></description>
       </entry>
     </bibliography>
 </Module>
