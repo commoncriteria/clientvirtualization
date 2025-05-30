@@ -4,10 +4,10 @@
 
    <PPReference>
     <ReferenceTable>
-      <PPVersion>1.2</PPVersion>
+      <PPVersion>2.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2025-05-19</PPPubDate>
-      <Keywords>QQQQ</Keywords>               <!-- This field is unused and optional -->
+      <PPPubDate>2025-06-06</PPPubDate>
+      <Keywords/>               <!-- This field is unused and optional -->
     </ReferenceTable>
 
   </PPReference>
@@ -23,8 +23,8 @@
       <subject>Published as a PP-Module</subject>
     </entry>
     <entry>
-      <version>1.2</version>
-      <date>2025-05-19</date>
+      <version>2.0</version>
+      <date>2025-06-06</date>
       <subject>CC2022 Conversion</subject>
     </entry>
   </RevisionHistory>
@@ -139,13 +139,13 @@
 		following use cases. The description of these use cases provides examples for how
 		the TOE and its Operational Environment could support the functionality required by this PP-Module.
             <usecases>
-            <usecase title="Locally Managed Client" id="locally">
+            <usecase title="Locally-Managed Client" id="locally">
                 <description>
                     A local administrator creates and runs one or more VMs locally. This client could 
 			be stand-alone or connected to a network.
                 </description>
             </usecase>
-            <usecase title="Enterprise Managed Client" id="enterprise">
+            <usecase title="Enterprise-Managed Client" id="enterprise">
                 <description>
                     An enterprise administrator for the VS centrally manages one or more client
 			hypervisors, creating and configuring VMs which are then pushed to the clients. These VMs are then available for users on that client to run using the computing resources of that client. (Note that this is not Virtual Desktop Infrastructure where the hypervisors and the VMs run on remote servers. While both can be centrally managed and accessed from clients, for client virtualization, the VMs are local to the endpoint machine.) 
@@ -238,7 +238,18 @@
     <section id="objectives" title="Security Objectives">
 	    
  	    <!-- 4.1 Security Objectives for the TOE -->
-	    
+	       <section id="TOEEnvironment" title="Security Objectives for the TOE">
+	           <SOs>
+	               <SO name="O.VMM_INTEGRITY">
+	                   <description>See Virtualization PP, Section 4.1</description>
+	               </SO>
+	               <SO name="O.VMM_INTEGRITY">
+	                   <description>See Virtualization PP, Section 4.1</description>
+	               </SO>
+	           </SOs>
+	           
+	       </section>
+        
 	<!-- 4.2 Security Objectives for the Operational Environment -->
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
@@ -271,11 +282,14 @@
 	 
 		<!-- Consistency Rationale -->
 		<!-- Consistency of TOE Type -->
-		<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
+		<modified-sfrs/>
+		<additional-sfrs/>
+	    <con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
 		        the overall TOE is still a Virtualization System. The TOE boundary does not change.
 		</con-toe>
-        <con-op-en>This PP does not introduce any new Security Objectives for the Operational Environment. Please refer to the Base-PP.</con-op-en>
-		<con-sec-prob/>
+        <con-sec-prob/>
+	    <con-op-en>This PP does not introduce any new Security Objectives for the Operational Environment. Please refer to the Base-PP.</con-op-en>
+		
 		
 	
 		<con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
@@ -629,8 +643,8 @@
               </section>
         </man-sfrs>
         <opt-sfrs/>
-        <obj-sfrs/>
         <sel-sfrs/>
+        <obj-sfrs/>        
         <impl-dep-sfrs/>
 
               

@@ -1,5 +1,2 @@
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:292:12: error: element "con-toe" not allowed yet; missing required element "modified-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:295:20: error: element "con-op-en" not allowed yet; missing required element "con-sec-prob"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:296:18: error: element "con-sec-prob" not allowed here; expected the element end-tag or element "con-mod"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:650:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
-/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:651:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
+/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:263:22: error: element "SO" incomplete; missing required element "addressed-by"
+/home/runner/work/clientvirtualization/clientvirtualization/input/clientvirtualization.xml:266:22: error: element "SO" incomplete; missing required element "addressed-by"
