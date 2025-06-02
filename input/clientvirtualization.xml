@@ -145,7 +145,7 @@
 	    	<!-- 1.3.1 TOE Boundary -->
 	    <section id="TOEboundary" title="TOE Boundary">
             	The TOE boundary is the same as that which is defined for a Virtualization System in
-		    general. Refer to the base Virtualization PP for an outline of the TOE boundary.
+		    the Base-PP.
         </section>   
     </section>
 	  
@@ -257,29 +257,7 @@
     <section id="objectives" title="Security Objectives">
 	    
  	    <!-- 4.1 Security Objectives for the TOE -->
-	       <section id="TOEEnvironment" title="Security Objectives for the TOE">
-	           <SOs>
-	               <SO name="O.MANAGEMENT_ACCESS">
-	                   <description>See Virtualization PP, Section 4.1</description>
-	                   <addressed-by>T.UNAUTHORIZED_ACCESS</addressed-by>
-	                   <rationale>Access to management functions must be
-	                       limited to authorized administrators as
-	                       managed through controls required by
-	                       FMT_MOF_EXT.1.</rationale>
-	               </SO>
-	               <SO name="O.VMM_INTEGRITY">
-	                   <description>See Virtualization PP, Section 4.1</description>
-	                   <addressed-by>T.UNAUTHORIZED_UPDATE</addressed-by>
-	                   <rationale>Integrity of a Virtualization System can be
-	                       maintained by ensuring that the only way to
-	                       modify the VS is through a trusted update
-	                       process initiated by an authorized
-	                       administrator as required by FMT_MOF_EXT.</rationale>
-	               </SO>
-	               
-	           </SOs>
-	           
-	       </section>
+	       
         
 	<!-- 4.2 Security Objectives for the Operational Environment -->
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
@@ -295,7 +273,7 @@
     <section id="sfr" title="Security Requirements">
 	    
 	<!-- 5.1 Virtualization PP -->
-        
+        <comment>Need to update to URL to current version when published.</comment>        
         <base-pp id="b-virt"
             product="virtualization"
             name="Virtualization" short="App" version="2.0">
@@ -303,7 +281,7 @@
 	    <url>https://raw.githubusercontent.com/commoncriteria/virtualization</url>
 	    <branch>master</branch>
 	  </git>
-          <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408</url>
+            <url>https://www.niap-ccevs.org/protectionprofiles/456 </url>
 
 		<!-- 5.1 Virtualization PP Security Functional Requirements Direction -->
 		<sec-func-req-dir>
@@ -668,7 +646,8 @@
                         </aactivity>
                     </f-element>
 		<audit-event>
-			<audit-event-descr>Attempts to invoke any of the management functions listed in <xref to="manfunc"/></audit-event-descr>
+			<audit-event-descr>Attempts to invoke any of the management functions listed in <xref
+			    to="manfunc"/>.</audit-event-descr>
 			<audit-event-info>Success or failure of attempt</audit-event-info>
 			<audit-event-info>Identity of actor</audit-event-info>
 		</audit-event>			
