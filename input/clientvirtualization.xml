@@ -295,7 +295,10 @@
     <section id="sfr" title="Security Requirements">
 	    
 	<!-- 5.1 Virtualization PP -->
-	<base-pp id="b-virt" version="1.2" name="Client Virtualization Systems" product="Client Virtualization Systems" short="CV" plural="Client Virtualization Systems">
+        
+        <base-pp id="b-virt"
+            product="virtualization"
+            name="Virtualization" short="App" version="2.0">
 	  <git>
 	    <url>https://raw.githubusercontent.com/commoncriteria/virtualization</url>
 	    <branch>master</branch>
