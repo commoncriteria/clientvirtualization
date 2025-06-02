@@ -302,7 +302,8 @@
 		        the overall TOE is still a Virtualization System. The TOE boundary does not change.
 		</con-toe>
         <con-sec-prob/>
-	    <con-op-en>This PP does not introduce any new security objectives for the operational environment. Please refer to the Base-PP.</con-op-en>
+	    <con-op-en>This PP does not introduce any new security objectives for the operational
+	        environment. Refer to the Base-PP.</con-op-en>
 		
 		
 	    <con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
@@ -349,7 +350,7 @@
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
                         <title>The TSF shall be capable of performing the following management functions, [<h:i>controlled by an administrator 
-				            or user as shown in the key in <xref to="manfunc"/>.</h:i><h:p/>
+				            or user as shown in the key in <xref to="manfunc"/>.</h:i>]<h:p/>
                             <h:center><h:h4><ctr ctr-type="Table" pre="Table " id="manfunc">: Client Virtualization Management Functions</ctr></h:h4></h:center>
 			    <h:div class="table-key" style="border-style: solid; padding: 5px;">
 				X = Mandatory (TOE must provide that function to that role)<h:br/>
