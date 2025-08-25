@@ -31,9 +31,9 @@
   <release-notes><h:h3>TDs Applied</h:h3></release-notes><include-pkg id="pkg-tls">
     <git>
       <url>https://github.com/commoncriteria/tls</url>
-      <branch>release-1.1</branch>
+      <branch>release-2.1</branch>
     </git>
-    <url>https://commoncriteria.github.io/tls/release-2.0/tls-release.html</url>
+    <url>https://commoncriteria.github.io/tls/release-2.1/tls-release.html</url>
 
     </include-pkg> 
     <include-pkg id="pkg-ssh">
